@@ -1,11 +1,13 @@
 import Head from 'next/head'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container bg">
       <Head>
         <title>「ハッカソン二郎オンライン」 - ラーメン二郎ハッカソン"ジロッカソン"インスパイア企画 -</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta property="og:title" content="「ハッカソン二郎オンライン」 - ラーメン二郎ハッカソン ジロッカソン インスパイア企画 -" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="" />
@@ -17,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
+      <Header />
       <main>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -57,25 +60,17 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <Footer />
+
 
       <style jsx>{`
         .container {
           min-height: 100vh;
-          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background: #000;
         }
 
         main {
@@ -87,23 +82,11 @@ export default function Home() {
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .bg {
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+          background-image: url("/ramen_bk.jpg");
         }
 
         a {
@@ -207,10 +190,6 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>
