@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ScheduleTable from '../components/ScheduleTable'
 
 export default function Home() {
   return (
@@ -21,42 +22,70 @@ export default function Home() {
 
       <Header />
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <div className="hero">
+          <div className="titleSection">
+            <h1 className="title">
+              ハッカソン<br></br>
+              二郎オンライン
+            </h1>
+            <p>- ラーメン二郎ハッカソン"ジロッカソン"インスパイア企画 -</p>
+            <p className="description">
+              2020年6月5日（金）20:00　〜　2020年6月7日（日）20:00
+            </p>
+          </div>
+        </div>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+          <div className="section-wh">
+            <p className="title">
+              趣旨
             </p>
-          </a>
+            <p className="description">
+              ジロリアンによるジロリアンのための二郎に捧げるハッカソンイベントの"インスパイア企画"です。
+              コロナ禍とニンニクの強烈な臭いの関係で会場の確保が難しいため、オンラインでハッカソンを実施いたします。
+              2020年、ジロッカソンの"インスパイア"イベントとして、GoNativeCodeが企画・運営をいたします。
+              当日は、運営チームによる実況生放送を行う予定です。豪華ゲストが来るかもしれない…！？
+              そして、企業スポンサー＆個人スポンサー募集中！
+              場合によっては景品が豪華になる…かも！？！
+            </p>
+          </div>
+          <div className="section-bl">
+            <p className="title">
+              概要
+            </p>
+            <p className="description">
+
+            </p>
+          </div>
+
+          <div className="section-wh">
+            <p className="title">
+              参加資格
+            </p>
+            <p className="description">
+              
+            </p>
+          </div>
+
+          <div className="section-bl">
+            <p className="title">
+              参加者スケジュール
+            </p>
+            <div className="description">
+              <ScheduleTable />
+            </div>
+          </div>
+
+          <div className="section-bl">
+            <p className="title">
+              「ハッカソン二郎オンライン」参加者スケジュール
+            </p>
+            <p className="description">
+              
+            </p>
+          </div>
+
         </div>
       </main>
 
@@ -82,33 +111,26 @@ export default function Home() {
           align-items: center;
         }
 
-        .bg {
-          background-attachment: fixed;
-          background-size: cover;
-          background-position: center;
-          background-image: url("/ramen_bk.jpg");
-        }
-
         a {
           color: inherit;
           text-decoration: none;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
+        a:hover,
+        a:focus,
+        a:active {
           text-decoration: underline;
         }
 
-        .title {
+        .hero .title {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+        }
+
+        .hero.description {
+          line-height: 1.5;
+          font-size: 1.5rem;
         }
 
         .title,
@@ -116,10 +138,15 @@ export default function Home() {
           text-align: center;
         }
 
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
+
+
+        .bg {
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+          background-image: url("/ramen_bk.jpg");
         }
+
 
         code {
           background: #fafafa;
@@ -131,11 +158,6 @@ export default function Home() {
         }
 
         .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
@@ -180,6 +202,7 @@ export default function Home() {
             flex-direction: column;
           }
         }
+        
       `}</style>
 
       <style jsx global>{`

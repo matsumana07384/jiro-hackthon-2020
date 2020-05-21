@@ -3,14 +3,9 @@ export default function Footer() {
   return (
     <>
     <footer>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-      </a>
+      <div>
+        <a href="https://gonativecode.connpass.com/">運営 ： GoNativeCode - 「connpassに、まだないイベントをつくろう！」</a>
+      </div>
     </footer>
     <style jsx>{`
       footer {
@@ -20,16 +15,22 @@ export default function Footer() {
         display: flex;
         justify-content: center;
         align-items: center;
+        background: #FFFF00;
+        color: #C6161E;
       }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
       footer a {
+        color: #C6161E;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        text-decoration: none;
+      }
+      footer a:hover,
+      footer a:focus,
+      footer a:active {
+        text-decoration: underline;
+      }
+      footer a:visited {
+        color: #8a252a;
+        opacity: 0.5;
       }
       `}</style>
     </>
