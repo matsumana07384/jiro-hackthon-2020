@@ -37,7 +37,7 @@ const rows = [
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 700,
+    minWidth: 300,
   },
 });
 
@@ -63,7 +63,7 @@ export default function ScheduleTable() {
               <StyledTableCell align="center">
                 {row.time}
               </StyledTableCell>
-              <StyledTableCell align="center" scope="row">
+            <StyledTableCell align="center" scope="row">
                 {row.contens}
               </StyledTableCell>
             </StyledTableRow>
