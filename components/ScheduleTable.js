@@ -8,24 +8,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-const StyledTableCell = withStyles((theme) => ({
-  head: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-  },
-  body: {
-    fontSize: 14,
-  },
-}))(TableCell);
-
-const StyledTableRow = withStyles((theme) => ({
-  root: {
-    '&:nth-of-type(odd)': {
-      backgroundColor: theme.palette.action.hover,
-    },
-  },
-}))(TableRow);
-
 function createData(day, time, contens) {
   return { day, time, contens };
 }
@@ -45,31 +27,31 @@ export default function ScheduleTable() {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell align="center">日にち</StyledTableCell>
-            <StyledTableCell align="center">時間</StyledTableCell>
-            <StyledTableCell align="center">内容</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.contens}>
-              <StyledTableCell component="th">
-                {row.day}
-              </StyledTableCell>
-              <StyledTableCell align="center">
-                {row.time}
-              </StyledTableCell>
-            <StyledTableCell align="center" scope="row">
-                {row.contens}
-              </StyledTableCell>
-            </StyledTableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+    <table>
+      <tr>
+        <th>日にち</th>
+        <th>時間</th>
+        <th>内容</th>
+      </tr>
+      <tr>
+        <td rowspan="2">2020年6月5日（金）</td>
+        <td>20:00-20:30</td>
+        <td>オープニング・詳細発表</td>
+      </tr>
+      <tr>
+        <td>20:30-</td>
+        <td>開発開始</td>
+      </tr>
+      <tr>
+        <td>2020年6月6日（土）</td>
+        <td>20:00-20:30</td>
+        <td>終日開発</td>
+      </tr>
+      <tr>
+        <td>2020年6月7日（日）</td>
+        <td>20:00-20:30</td>
+        <td>終日開発</td>
+      </tr>
+    </table>
   );
 }

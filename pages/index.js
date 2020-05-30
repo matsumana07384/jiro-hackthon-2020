@@ -28,7 +28,7 @@ export default function Home() {
               ハッカソン<br></br>
               二郎オンライン
             </h1>
-            <p>- ラーメン二郎ハッカソン"ジロッカソン"インスパイア企画 -</p>
+            <p className="subtitle">- ラーメン二郎ハッカソン"ジロッカソン"インスパイア企画 -</p>
             <p className="description">
               2020年6月5日（金）20:00　〜　2020年6月7日（日）20:00
             </p>
@@ -103,12 +103,12 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          text-align: center;
         }
 
         a {
@@ -121,23 +121,36 @@ export default function Home() {
         a:active {
           text-decoration: underline;
         }
-
-        .hero .title {
+        p {
           margin: 0;
-          line-height: 1.15;
+        }
+        .hero {
+          background-color: rgba(0,0,0,0.5);
+          color: #ffffff;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+        .hero .title {
           font-size: 4rem;
+          margin: 0;
         }
-
-        .hero.description {
+        .hero .subtitle {
+          font-size: 2rem;
+        }
+        .hero .description {
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
-
-        .title {
-          text-align: center;
+        .section-wh .title,
+        .section-bl .title {
+          font-size: 1.3rem;
           font-weight: 700;
+          text-align: center;
+          padding-top: 1rem;
+          padding-bottom: 1rem;                
         }
         .description {
+          font-size: 1.1rem;
           text-align: center;
         }
 
@@ -155,8 +168,23 @@ export default function Home() {
         .section-wh {
           background-color: rgba(255,255,255,0.5);
           color: #000000;
+          width: 100vw;
         }
-      
+
+        .grid {
+        }
+
+        .logo {
+          height: 1em;
+        }
+
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+        
       `}</style>
 
       <style jsx global>{`
