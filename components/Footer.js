@@ -17,6 +17,7 @@ export default function Footer() {
         align-items: center;
         background: #FFFF00;
         color: #C6161E;
+        padding: 0 1rem;
       }
       footer a {
         color: #C6161E;
