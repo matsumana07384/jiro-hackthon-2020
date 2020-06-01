@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import ScheduleTable from '../components/ScheduleTable'
+import Button from '@material-ui/core/Button';
 
 export default function Home() {
   return (
@@ -28,18 +28,26 @@ export default function Home() {
               ハッカソン<br></br>
               二郎オンライン
             </h1>
-            <p className="subtitle">- ラーメン二郎ハッカソン"ジロッカソン"インスパイア企画 -</p>
-            <p className="description">
+            <p className="subtitle">
+              - ラーメン二郎ハッカソン"ジロッカソン"<br></br>
+              インスパイア企画 -
+            </p>
+            <p className="date">
               2020年6月5日（金）20:00　〜　2020年6月7日（日）20:00
+            </p>
+            <p>@online</p>
+            <p className="button">
+              <a href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">
+                <Button variant="contained" size="large">参加する</Button>
+              </a>
             </p>
           </div>
         </div>
 
         <div className="grid">
-
-          <div className="section-wh">
+          <div className="section white" id="about">
             <p className="title">
-              趣旨
+              概要
             </p>
             <p className="description">
               ジロリアンによるジロリアンのための二郎に捧げるハッカソンイベントの"インスパイア企画"です。
@@ -50,42 +58,114 @@ export default function Home() {
               場合によっては景品が豪華になる…かも！？！
             </p>
           </div>
-          <div className="section-bl">
+          <div className="section black" id="theme">
             <p className="title">
-              概要
+              開発テーマ
             </p>
             <p className="description">
-
+            テーマは改めて当日発表します。あとはジロリアンの皆さんが欲しいもの、使いたいものを自由に創って頂きます。一日でアイデア出しから実装、発表資料の作成までをすべて行って頂きます。Webアプリ、スマホアプリ、ツール等、何をどこでどう作るかは参加者のみなさんの自由です。開発部門は、アイデアと制作物の完成度で審査がされます。
             </p>
           </div>
 
-          <div className="section-wh">
+          <div className="section white" id="qualification">
             <p className="title">
               参加資格
             </p>
             <p className="description">
-              
+              ラーメン二郎を愛するエンジニアの方ならどなたでも
+              <ul>
+                <li>個人でもチームでもご参加頂けます</li>
+                <li>チーム参加の場合は、申込時にアンケートにて、チーム名をご記入ください。</li>
+                <li>チーム参加の場合でも、全メンバー必ず本フォームからお申込をお願いいたします。</li>
+                <li>個人参加の方は原則個人での開発となります。当日、お誘いあわせの上でチームを組むことも可能です。</li>
+              </ul>  
             </p>
           </div>
-
-          <div className="section-bl">
+          <div className="section black" id="schedule">
             <p className="title">
               参加者スケジュール
             </p>
             <div className="description">
-              <ScheduleTable />
+              <table>
+                <tr>
+                  <th>日にち</th>
+                  <th>時間</th>
+                  <th>内容</th>
+                </tr>
+                <tr>
+                  <td rowspan="2">2020年6月5日（金）</td>
+                  <td>20:00-20:30</td>
+                  <td>オープニング・詳細発表</td>
+                </tr>
+                <tr>
+                  <td>20:30-</td>
+                  <td>開発開始</td>
+                </tr>
+                <tr>
+                  <td>2020年6月6日（土）</td>
+                  <td>20:00-20:30</td>
+                  <td>終日開発</td>
+                </tr>
+                <tr>
+                  <td　rowspan="5">2020年6月7日（日）</td>
+                  <td>12:00-15:00</td>
+                  <td>発表会エントリー受付</td>
+                </tr>
+                <tr>
+                  <td>17:00</td>
+                  <td>開発終了</td>
+                </tr>
+                <tr>
+                  <td>17:00-19:00</td>
+                  <td>発表会</td>
+                </tr>
+                <tr>
+                  <td>19:00-19:30</td>
+                  <td>審査時間（休憩）</td>
+                </tr>
+                <tr>
+                  <td>19:00-19:30</td>
+                  <td>オンライン飲み会（任意参加）</td>
+                </tr>
+              </table>
             </div>
           </div>
 
-          <div className="section-bl">
+          <div className="section white" id="live">
             <p className="title">
-              「ハッカソン二郎オンライン」参加者スケジュール
+              生配信スケジュール
             </p>
             <p className="description">
-              
+            <table>
+                <tr>
+                  <th>日にち</th>
+                  <th>時間</th>
+                  <th>内容</th>
+                </tr>
+                <tr>
+                  <td　rowspan="5">2020年6月7日（日）</td>
+                  <td>15:00-15:30</td>
+                  <td>イベント概要のおさらい</td>
+                </tr>
+                <tr>
+                  <td>15:30-17:00</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>17:00-19:00</td>
+                  <td>発表会（1チーム/1個人 5分程度）</td>
+                </tr>
+                <tr>
+                  <td>19:00-19:30</td>
+                  <td>TBD</td>
+                </tr>
+                <tr>
+                  <td>19:00-21:00</td>
+                  <td>結果発表・表彰・講評、エンディング</td>
+                </tr>
+              </table>
             </p>
           </div>
-
         </div>
       </main>
 
@@ -115,7 +195,6 @@ export default function Home() {
           color: inherit;
           text-decoration: none;
         }
-
         a:hover,
         a:focus,
         a:active {
@@ -127,9 +206,30 @@ export default function Home() {
         .hero {
           background-color: rgba(0,0,0,0.5);
           color: #ffffff;
-          padding-top: 3rem;
-          padding-bottom: 3rem;
+          padding: 3rem 15rem;
+          width: 100vw;
         }
+        table {
+          margin: 0 auto;
+        }
+        .black table th {
+          background-color: #000;
+        }
+        .black table th,
+        .black table td {
+          padding: 1em 10px 1em 1em;
+          border: 1px solid #bbb;
+        }
+        .white table th {
+          background-color: #fff;
+        }
+        .white table th,
+        .white table td {
+          padding: 1em 10px 1em 1em;
+          border: 1px solid #000;
+        }
+
+
         .hero .title {
           font-size: 4rem;
           margin: 0;
@@ -137,21 +237,22 @@ export default function Home() {
         .hero .subtitle {
           font-size: 2rem;
         }
-        .hero .description {
+        .hero .date {
           line-height: 1.5;
           font-size: 1.2rem;
+          margin-top: 1rem;
         }
-        .section-wh .title,
-        .section-bl .title {
-          font-size: 1.3rem;
-          font-weight: 700;
-          text-align: center;
-          padding-top: 1rem;
-          padding-bottom: 1rem;                
+        .hero .button {
+          margin-top: 1rem;
         }
         .description {
           font-size: 1.1rem;
           text-align: center;
+          padding: 1vh 15vw 5vh 15vw;
+          margin: 0 auto 0 auto;
+        }
+        ul li {
+          text-align: left;
         }
 
         .bg {
@@ -160,31 +261,41 @@ export default function Home() {
           background-position: center;
           background-image: url("/ramen_bk.jpg");
         }
-        .section-bl {
-          background-color: rgba(0,0,0,0.5);
-          color: #ffffff;
+        .section {
           margin: 0;
         }
-        .section-wh {
+        .black {
+          background-color: rgba(0,0,0,0.5);
+          color: #ffffff;
+        }
+        .white {
           background-color: rgba(255,255,255,0.5);
           color: #000000;
-          width: 100vw;
+        }
+        .section .title {
+          font-size: 1.3rem;
+          font-weight: 700;
+          text-align: center;
+          padding-top: 1rem;
+          padding-bottom: 1rem;                
+        }
+        .section .title::before  {
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: '';
+          display: inline-block;
+          width: 2rem;
+          height: 1.5rem;
+        }    
+        .white .title::before {
+          background-image: url("/garlic_black.png");
+        }
+        .black .title::before {
+          background-image: url("/garlic_white.png");
         }
 
-        .grid {
-        }
 
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-        
       `}</style>
 
       <style jsx global>{`
