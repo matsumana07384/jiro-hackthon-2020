@@ -7,7 +7,7 @@ export default function Header() {
       <div><a class="link" href="#theme">開発テーマ</a></div>
       <div><a class="link" href="#qualification">参加資格</a></div>
       <div><a class="link" href="#schedule">参加者スケジュール</a></div>
-      <div><a class="link" href="#live">生配信</a></div>
+      <div><a class="link" href="#live">生配信スケジュール</a></div>
     </header>
     <style jsx>{`
       header {
@@ -23,6 +23,7 @@ export default function Header() {
       .container {
         align-items: center;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         height: 60px;
       }

@@ -33,7 +33,9 @@ export default function Home() {
               インスパイア企画 -
             </p>
             <p className="date">
-              2020年6月5日（金）20:00　〜　2020年6月7日（日）20:00
+              2020年6月5日（金）20:00<br></br>
+              〜<br></br>
+              2020年6月7日（日）20:00
             </p>
             <p>@online</p>
             <p className="button">
@@ -55,7 +57,7 @@ export default function Home() {
               2020年、ジロッカソンの"インスパイア"イベントとして、GoNativeCodeが企画・運営をいたします。
               当日は、運営チームによる実況生放送を行う予定です。豪華ゲストが来るかもしれない…！？
               そして、企業スポンサー＆個人スポンサー募集中！
-              場合によっては景品が豪華になる…かも！？！
+              場合によっては景品が豪華になる…かも！？！<br></br>優勝賞品は、ニンニク1年分です！
             </p>
           </div>
           <div className="section black" id="theme">
@@ -206,7 +208,7 @@ export default function Home() {
         .hero {
           background-color: rgba(0,0,0,0.5);
           color: #ffffff;
-          padding: 3rem 15rem;
+          padding: 3rem 0;
           width: 100vw;
         }
         table {
