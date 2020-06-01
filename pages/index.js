@@ -83,7 +83,7 @@ export default function Home() {
               </ul>  
             </p>
           </div>
-          <div className="section black" id="schedule">
+          {/* <div className="section black" id="schedule">
             <p className="title">
               参加者スケジュール
             </p>
@@ -132,7 +132,6 @@ export default function Home() {
               </table>
             </div>
           </div>
-
           <div className="section white" id="live">
             <p className="title">
               生配信スケジュール
@@ -167,7 +166,7 @@ export default function Home() {
                 </tr>
               </table>
             </p>
-          </div>
+          </div> */}
         </div>
       </main>
 
