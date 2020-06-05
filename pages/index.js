@@ -81,18 +81,6 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="section black" id="qualification">
-            <p className="title">
-              参加資格
-            </p>
-            <div>
-              <p className="description">ラーメン二郎を愛するエンジニアの方ならどなたでも</p>
-              <ul>
-                <li>個人でもチームでもご参加頂けます</li>
-                <li>当日、お誘いあわせの上でチームを組んでいただいても構いません</li>
-              </ul>
-            </div>
-          </div>
           {/* <div className="section black" id="schedule">
             <p className="title">
               参加者スケジュール
