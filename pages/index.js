@@ -40,8 +40,9 @@ export default function Home() {
               </p>
               <p className="text">@online</p>
             </div>
+            <p className="status">\ 開催中 /</p>
             <div className="button">
-              <Button variant="contained" size="large" href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">参加する</Button>
+              <Button variant="contained" size="large" href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">ハッカソンに参加する</Button>
             </div>
           </div>
         </div>
@@ -338,7 +339,11 @@ export default function Home() {
         .black .title::before {
           background-image: url("/garlic_white.png");
         }
-
+        .status {
+          color: #C6161E;
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
 
       `}</style>
 
