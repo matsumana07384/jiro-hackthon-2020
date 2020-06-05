@@ -41,9 +41,9 @@ export default function Home() {
               </p>
               <p className="text">@online</p>
             </div>
-            <p className="button">
+            <div className="button">
               <Button variant="contained" size="large" href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">参加する</Button>
-            </p>
+            </div>
           </div>
         </div>
 
@@ -69,20 +69,29 @@ export default function Home() {
             テーマは改めて当日発表します。あとはジロリアンの皆さんが欲しいもの、使いたいものを自由に創って頂きます。一日でアイデア出しから実装、発表資料の作成までをすべて行って頂きます。Webアプリ、スマホアプリ、ツール等、何をどこでどう作るかは参加者のみなさんの自由です。開発部門は、アイデアと制作物の完成度で審査がされます。
             </p>
           </div>
-
           <div className="section white" id="qualification">
             <p className="title">
               参加資格
             </p>
-            <p className="description">
-              ラーメン二郎を愛するエンジニアの方ならどなたでも
+            <div>
+              <p className="description">ラーメン二郎を愛するエンジニアの方ならどなたでも</p>
               <ul>
                 <li>個人でもチームでもご参加頂けます</li>
-                <li>チーム参加の場合は、申込時にアンケートにて、チーム名をご記入ください。</li>
-                <li>チーム参加の場合でも、全メンバー必ず本フォームからお申込をお願いいたします。</li>
-                <li>個人参加の方は原則個人での開発となります。当日、お誘いあわせの上でチームを組むことも可能です。</li>
-              </ul>  
+                <li>当日、お誘いあわせの上でチームを組んでいただいても構いません</li>
+              </ul>
+            </div>
+          </div>
+          <div className="section black" id="qualification">
+            <p className="title">
+              参加資格
             </p>
+            <div>
+              <p className="description">ラーメン二郎を愛するエンジニアの方ならどなたでも</p>
+              <ul>
+                <li>個人でもチームでもご参加頂けます</li>
+                <li>当日、お誘いあわせの上でチームを組んでいただいても構いません</li>
+              </ul>
+            </div>
           </div>
           {/* <div className="section black" id="schedule">
             <p className="title">
