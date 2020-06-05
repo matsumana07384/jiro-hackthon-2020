@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import HashTag from '../components/hashtag'
 import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
+
 
 export default function Home() {
   return (
@@ -20,7 +21,6 @@ export default function Home() {
         <meta name="robots" content="index,follow" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-
       <Header />
       <main>
         <div className="hero">
@@ -74,13 +74,45 @@ export default function Home() {
               参加資格
             </p>
             <div>
-              <p className="description">ラーメン二郎を愛するエンジニアの方ならどなたでも</p>
-              <ul>
+              <p>ラーメン二郎を愛するエンジニアの方ならどなたでも</p>
+              <ul className="list">
                 <li>個人でもチームでもご参加頂けます</li>
                 <li>当日、お誘いあわせの上でチームを組んでいただいても構いません</li>
               </ul>
             </div>
           </div>
+          <div className="section black" id="rule">
+            <p className="title">
+              ルール
+            </p>
+            <ul className="list">
+              <li>
+              今回のハッカソンはオンライン上で行います。参加に際しては本イベントページでの録を推奨いたしますが、期間が長いため、必須とはしないものとします。基本的には参加者へのDMにて情報をお送りしますが、Twitterのハッシュタグ「 <HashTag />」や <a href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">イベントページ</a>等でも情報を発信し、参加登録されていない方でも確認いただけるよう努めてまいります。
+              </li>開発期間は6/5（金）20:00から6/7（日）17:00の45時間とします。この時間には発表用の資料制作の時間を含みます。期間中でご都合の良い時に開発いただければ構いません。また各自で適切に睡眠を取ってください。スケジュールについては<a href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">イベントページ</a>を合わせてご覧ください。
+              <li>
+              希望される方のチーム編成については、各々にてお願いいたします。その際はハッシュタグ「 <HashTag /> 」をご活用いただければと思います。
+              </li>
+              <li>
+              開発中も、随時Twitterのハッシュタグ「 <HashTag /> 」をご活用いただき、進捗報告やお昼ご飯の共有などでいただき盛り上げていただけますと助かります。
+              </li>
+              <li>
+                発表会は6/7（日）17:00から、ビデオ会議ツール「zoom.us」をもちいて行うものとします。また、作品の状況の確認のため、同日12:00-15:00にエントリーの時間を設けます。また、開発いただいた上で発表会の時間にご予定があるなど、発表会にご参加いただけない方は、資料をご用意いただければ代理にて作品のご紹介をさせていただきます。詳細については6日（土）中に改めてご案内いたします。
+              </li>
+              <li>
+                7日（日）にはYouTube Liveを用いた生放送を予定しております。また、作品の発表会や審査結果発表も同放送内で行う予定です。詳細については7日（日）に改めてご案内いたします。
+              </li>
+              <li>
+                イベント規模が小さいことから、審査については部門ごとの賞などは設けず、総合的な審査を行い、最優秀の作品を1作品と、入賞を数作品選出する予定です。審査基準については、「アイデアの内容」と「使用している技術」の両側面を考慮するよう努めますが、テーマの性質上、「アイデアの内容」、特に「面白さ/斬新さ」の面の比重を大きくした審査となります。
+              </li>
+              <li>
+                優勝された方には個別にご連絡をし、優勝商品の「ニンニク1年分」を手配いたします。原則としてお受け取りください。
+              </li>
+              <li>
+              当日の状況にもよりますが、生放送終了後にご希望の方でzoomを用いたオンライン懇親会を行いたいと考えています。ぜひご参加いただけますと嬉しいです。
+              </li>
+            </ul> 
+          </div>
+
           {/* <div className="section black" id="schedule">
             <p className="title">
               参加者スケジュール
@@ -288,6 +320,14 @@ export default function Home() {
           width: 2rem;
           height: 1.5rem;
         }    
+        .list {
+          text-align: left;
+          display: inline-block;
+          padding: 0 4rem;
+        }
+        .list >li:not(:first-child){
+          margin: 1rem;
+        }
         .white .title::before {
           background-image: url("/garlic_black.png");
         }
