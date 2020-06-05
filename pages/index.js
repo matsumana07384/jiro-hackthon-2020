@@ -4,7 +4,6 @@ import Footer from '../components/Footer'
 import HashTag from '../components/hashtag'
 import Button from '@material-ui/core/Button';
 
-
 export default function Home() {
   return (
     <div className="container bg">
@@ -88,7 +87,9 @@ export default function Home() {
             <ul className="list">
               <li>
               今回のハッカソンはオンライン上で行います。参加に際しては本イベントページでの録を推奨いたしますが、期間が長いため、必須とはしないものとします。基本的には参加者へのDMにて情報をお送りしますが、Twitterのハッシュタグ「 <HashTag />」や <a href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">イベントページ</a>等でも情報を発信し、参加登録されていない方でも確認いただけるよう努めてまいります。
-              </li>開発期間は6/5（金）20:00から6/7（日）17:00の45時間とします。この時間には発表用の資料制作の時間を含みます。期間中でご都合の良い時に開発いただければ構いません。また各自で適切に睡眠を取ってください。スケジュールについては<a href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">イベントページ</a>を合わせてご覧ください。
+              </li>
+              <li>開発期間は6/5（金）20:00から6/7（日）17:00の45時間とします。この時間には発表用の資料制作の時間を含みます。期間中でご都合の良い時に開発いただければ構いません。また各自で適切に睡眠を取ってください。スケジュールについては<a href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">イベントページ</a>を合わせてご覧ください。
+              </li>
               <li>
               希望される方のチーム編成については、各々にてお願いいたします。その際はハッシュタグ「 <HashTag /> 」をご活用いただければと思います。
               </li>

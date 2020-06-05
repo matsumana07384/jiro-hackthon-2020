@@ -6,6 +6,7 @@ export default function Header() {
       <div><a href="#about">概要</a></div>
       <div><a href="#theme">開発テーマ</a></div>
       <div><a href="#qualification">参加資格</a></div>
+      <div><a href="#rule">ルール</a></div>
       {/* <div><a href="#schedule">参加者スケジュール</a></div>
       <div><a href="#live">生配信スケジュール</a></div> */}
     </header>
