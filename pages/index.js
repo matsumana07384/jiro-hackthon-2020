@@ -325,8 +325,11 @@ export default function Home() {
           display: inline-block;
           padding: 0 4rem;
         }
-        .list >li:not(:first-child){
+        .list >li {
           margin: 1rem;
+        }
+        .list >li:first-child{
+          maring-top: 0;
         }
         .white .title::before {
           background-image: url("/garlic_black.png");
