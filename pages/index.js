@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 
 export default function Home() {
   return (
@@ -32,16 +33,16 @@ export default function Home() {
               - ラーメン二郎ハッカソン"ジロッカソン"<br></br>
               インスパイア企画 -
             </p>
-            <p className="date">
-              2020年6月5日（金）20:00<br></br>
-              〜<br></br>
-              2020年6月7日（日）20:00
-            </p>
-            <p>@online</p>
+            <div className="textBlock">
+              <p className="text">
+                2020年6月5日（金）20:00<br></br>
+                 〜 <br></br>
+                2020年6月7日（日）20:00
+              </p>
+              <p className="text">@online</p>
+            </div>
             <p className="button">
-              <a href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">
-                <Button variant="contained" size="large">参加する</Button>
-              </a>
+              <Button variant="contained" size="large" href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">参加する</Button>
             </p>
           </div>
         </div>
@@ -238,10 +239,11 @@ export default function Home() {
         .hero .subtitle {
           font-size: 2rem;
         }
-        .hero .date {
-          line-height: 1.5;
-          font-size: 1.2rem;
+        .hero .textBlock {
           margin-top: 1rem;
+        }
+        .hero .text {
+          font-size: 1.2rem;
         }
         .hero .button {
           margin-top: 1rem;
