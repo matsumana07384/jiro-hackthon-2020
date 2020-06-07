@@ -43,7 +43,7 @@ export default function Home() {
             <div>
               <p className="status">\ 発表会配信中 /</p>
               <div className="text">
-                  <a href="https://live.nicovideo.jp/watch/lv326378738">ハッカソン二郎オンライン</a>
+                <iframe width="312" height="176" src="https://live.nicovideo.jp/embed/lv326378738" scrolling="no" frameborder="1"><a href="https://live.nicovideo.jp/watch/lv326378738">ハッカソン二郎オンライン</a></iframe>
               </div>
             </div>
           </div>
@@ -68,8 +68,9 @@ export default function Home() {
               開発テーマ
             </p>
             <p className="description">
-            テーマは改めて当日発表します。あとはジロリアンの皆さんが欲しいもの、使いたいものを自由に創って頂きます。一日でアイデア出しから実装、発表資料の作成までをすべて行って頂きます。Webアプリ、スマホアプリ、ツール等、何をどこでどう作るかは参加者のみなさんの自由です。開発部門は、アイデアと制作物の完成度で審査がされます。
-            </p>
+              今回のハッカソンは「ジロッカソン」のインスパイアということで、テーマはそのまま拝借して「二郎ライフを楽しく／便利にするアプリケーション」とします！<br></br>
+              「ラーメン二郎（や二郎インスパイア系と呼ばれるラーメン）」と「テクノロジー」が絡んだものであればなんでもOK！本当に便利なアプリを作るのはもちろん、使って楽しいアプリもよし、はたまた近頃持ち帰りも盛んな物理二郎を素材にするのもいいかもしれません。（食べ物は粗末に扱わず美味しく食べましょう。）
+              </p>
           </div>
           <div className="section white" id="qualification">
             <p className="title">
