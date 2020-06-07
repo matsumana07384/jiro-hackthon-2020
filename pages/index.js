@@ -40,10 +40,8 @@ export default function Home() {
               <p className="text">@online</p>
             </div>
             <div>
-              <p className="status">\ 配信中 /</p>
-              <div className="text">
-                <iframe width="312" height="176" src="https://live.nicovideo.jp/embed/lv326378738" scrolling="no" frameborder="1"><a href="https://live.nicovideo.jp/watch/lv326378738">ハッカソン二郎オンライン</a></iframe>
-              </div>
+              <p className="status">\ ご参加頂きありがとうございました！ /</p>
+              <HashTag />
             </div>
           </div>
         </div>
@@ -258,8 +256,8 @@ export default function Home() {
           background-image: url("/garlic_white.png");
         }
         .status {
-          color: #C6161E;
-          font-size: 1.5rem;
+          color: #fff;
+          font-size: 1rem;
           margin-top: 1rem;
         }
 
