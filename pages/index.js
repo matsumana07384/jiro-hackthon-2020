@@ -41,15 +41,9 @@ export default function Home() {
               <p className="text">@online</p>
             </div>
             <div>
-              <p className="status">\ 参加者の方へ /</p>
-              <div className="button">
-                <Button variant="contained" size="large" href="https://docs.google.com/forms/d/e/1FAIpQLScZDF5aXboythEYrSKcjAPuQxRVLiRESdPUjxHZH1Lv4X62kw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">発表会へエントリーする</Button>
-              </div>
-            </div>
-            <div>
-              <p className="status">\ 開催中 /</p>
-              <div className="button">
-                <Button variant="contained" size="large" href="https://gonativecode.connpass.com/event/173348/" target="_blank" rel="noopener noreferrer">ハッカソンに参加する</Button>
+              <p className="status">\ 発表会配信中 /</p>
+              <div className="text">
+                  <a href="https://live.nicovideo.jp/watch/lv326378738">ハッカソン二郎オンライン</a>
               </div>
             </div>
           </div>
