@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import HashTag from '../components/hashtag'
-import Button from '@material-ui/core/Button';
 
 export default function Home() {
   return (
@@ -41,7 +40,7 @@ export default function Home() {
               <p className="text">@online</p>
             </div>
             <div>
-              <p className="status">\ 発表会配信中 /</p>
+              <p className="status">\ 審査中 /</p>
               <div className="text">
                 <iframe width="312" height="176" src="https://live.nicovideo.jp/embed/lv326378738" scrolling="no" frameborder="1"><a href="https://live.nicovideo.jp/watch/lv326378738">ハッカソン二郎オンライン</a></iframe>
               </div>
